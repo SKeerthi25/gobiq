@@ -1,3 +1,16 @@
+export interface DirectorInfo {
+  name: string;
+  officialFilingName: string;
+  role: string;
+  roleStatus: string;
+  dateOfBirth: string;
+  appointedOn: string;
+  nationality: string;
+  residence: string;
+  correspondenceAddress: string;
+  identityVerification: string;
+}
+
 export interface CompanyInfo {
   name: string;
   legalName: string;
@@ -23,8 +36,11 @@ export interface CompanyInfo {
     websiteUrl: string;
   };
   hours: string;
+  weekdaysHours: string;
+  weekendHours: string;
   tagline: string;
   heroDescription: string;
+  director: DirectorInfo;
 }
 
 export const companyData: CompanyInfo = {
@@ -51,8 +67,22 @@ export const companyData: CompanyInfo = {
     website: "www.gobiq.co.uk",
     websiteUrl: "https://www.gobiq.co.uk",
   },
-  hours: "Monday – Friday: 08:00 – 17:30",
+  hours: "Mon–Fri: 09:00–18:00 | Sat–Sun: 10:00–16:00",
+  weekdaysHours: "Monday – Friday: 09:00 – 18:00",
+  weekendHours: "Saturday – Sunday: 10:00 – 16:00",
   tagline: "Building Better Homes. Creating Lasting Value.",
   heroDescription:
     "GOBIQ LTD delivers a considered approach to domestic building construction, with a focus on quality workmanship, thoughtful planning, and homes built for everyday living.",
+  director: {
+    name: "Gobinath Maniyan",
+    officialFilingName: "MANIYAN, Gobinath",
+    role: "Director",
+    roleStatus: "ACTIVE",
+    dateOfBirth: "July 1989",
+    appointedOn: "31 August 2026",
+    nationality: "Indian",
+    residence: "England",
+    correspondenceAddress: "78 Toll End Road, Tipton, England, DY4 0EU",
+    identityVerification: "Verification requirements complete",
+  },
 };

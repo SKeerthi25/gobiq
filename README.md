@@ -14,7 +14,9 @@ Designed with the clarity of a corporate SaaS platform combined with the archite
 | **Business Classification** | SIC 41202 — Construction of domestic buildings |
 | **Companies House No.** | 17428577 |
 | **Company Status** | Active |
-| **Incorporation Date** | 31 August 2026 |
+| **Company Director** | Gobinath Maniyan (`MANIYAN, Gobinath`) — Active |
+| **Director Appointed** | 31 August 2026 (Identity Verification Complete) |
+| **Operating Hours** | Mon–Fri: 09:00–18:00 \| Sat–Sun: 10:00–16:00 |
 | **Registered Office** | 78 Toll End Road, Tipton, England, DY4 0EU |
 | **Direct Telephone** | 07796 195206 (`tel:+447796195206`) |
 | **Direct Email** | [gobiuk1989@gmail.com](mailto:gobiuk1989@gmail.com) |

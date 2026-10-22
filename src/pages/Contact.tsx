@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Phone, Mail, MapPin, Building, Clock, ExternalLink } from "lucide-react";
 import { ContactForm } from "../components/ContactForm";
 import { companyData } from "../data/company";
 
 export const Contact: React.FC = () => {
+  const [mapProvider, setMapProvider] = useState<"google" | "osm">("google");
+
   return (
     <div className="space-y-16 lg:space-y-24 pb-16">
       {/* =========================================================================
@@ -109,10 +111,13 @@ export const Contact: React.FC = () => {
                     <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-muted block">
                       Operating Hours
                     </span>
-                    <p className="text-sm font-medium text-charcoal mt-0.5">
-                      {companyData.hours}
+                    <p className="text-sm font-semibold text-charcoal mt-0.5">
+                      {companyData.weekdaysHours}
                     </p>
-                    <p className="text-xs text-charcoal-muted">Closed Sundays &amp; UK Bank Holidays</p>
+                    <p className="text-sm font-semibold text-charcoal">
+                      {companyData.weekendHours}
+                    </p>
+                    <p className="text-xs text-charcoal-muted mt-0.5">Weekend client consultations available</p>
                   </div>
                 </li>
               </ul>
@@ -134,33 +139,70 @@ export const Contact: React.FC = () => {
 
             {/* Interactive Map Embed for Registered Office (DY4 0EU, Tipton) */}
             <div className="bg-white rounded-sm border border-forest/10 shadow-card overflow-hidden">
-              <div className="p-4 bg-forest/5 border-b border-forest/10 flex items-center justify-between">
+              <div className="p-4 bg-forest/5 border-b border-forest/10 flex items-center justify-between flex-wrap gap-2">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-charcoal">
                   <MapPin className="w-4 h-4 text-forest" />
                   <span>Office Location — Tipton, DY4 0EU</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setMapProvider(mapProvider === "google" ? "osm" : "google")}
+                    className="text-[11px] font-semibold text-charcoal-muted hover:text-forest px-2 py-0.5 rounded border border-forest/10 hover:bg-white transition-colors"
+                    title="Switch map view provider"
+                  >
+                    View: {mapProvider === "google" ? "OpenStreetMap" : "Google Maps"}
+                  </button>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=78+Toll+End+Road,+Tipton,+DY4+0EU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold text-forest hover:text-gold flex items-center gap-1"
+                  >
+                    <span>Full Map</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Map Iframe Container with explicit responsive height */}
+              <div className="relative w-full h-72 sm:h-80 bg-ivory">
+                {mapProvider === "google" ? (
+                  <iframe
+                    title="GOBIQ LTD Registered Office Location - 78 Toll End Road, Tipton, England, DY4 0EU"
+                    src="https://maps.google.com/maps?q=78%20Toll%20End%20Road,%20Tipton,%20DY4%200EU,%20UK&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full block"
+                  />
+                ) : (
+                  <iframe
+                    title="GOBIQ LTD Registered Office on OpenStreetMap"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-2.0674%2C52.5341%2C-2.0474%2C52.5441&layer=mapnik&marker=52.5391%2C-2.0574"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    className="w-full h-full block"
+                  />
+                )}
+              </div>
+
+              {/* Bottom Quick Directions Strip */}
+              <div className="p-3 bg-forest-50/60 border-t border-forest/10 flex items-center justify-between text-xs text-charcoal-muted">
+                <span className="font-mono text-forest font-semibold">78 Toll End Rd, Tipton DY4 0EU</span>
                 <a
-                  href="https://maps.google.com/?q=78+Toll+End+Road+Tipton+DY4+0EU"
+                  href="https://www.google.com/maps/dir/?api=1&destination=78+Toll+End+Road,+Tipton,+DY4+0EU"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-semibold text-forest hover:text-gold flex items-center gap-1"
+                  className="font-semibold text-forest hover:underline flex items-center gap-1"
                 >
-                  <span>Google Maps</span>
+                  <span>Get Directions</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
-              </div>
-              <div className="aspect-[16/9] w-full bg-sage/20">
-                <iframe
-                  title="GOBIQ LTD Registered Office Location - 78 Toll End Road, Tipton, England, DY4 0EU"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.6877283431664!2d-2.057399323318255!3d52.53913077197026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48709971bc1d8cfd%3A0xe6aa9be40d346ff0!2s78%20Toll%20End%20Rd%2C%20Tipton%20DY4%200EU%2C%20UK!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="w-full h-full grayscale-[20%] contrast-[1.05]"
-                />
               </div>
             </div>
           </div>

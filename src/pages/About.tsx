@@ -10,6 +10,8 @@ import {
   Eye,
   FileText,
   Phone,
+  UserCheck,
+  BadgeCheck,
 } from "lucide-react";
 import { Button } from "../components/Button";
 import { SectionHeading } from "../components/SectionHeading";
@@ -180,6 +182,101 @@ export const About: React.FC = () => {
       </section>
 
       {/* =========================================================================
+          COMPANY LEADERSHIP & DIRECTOR
+          Official verified Companies House leadership filing
+          ========================================================================= */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-sm border border-forest/15 p-8 sm:p-12 shadow-card">
+          <SectionHeading
+            badge="Company Leadership"
+            title="Director &amp; Governance"
+            description="GOBIQ LTD operates under verified corporate governance with official registration at Companies House for England and Wales."
+          />
+
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            {/* Director Profile Card */}
+            <div className="lg:col-span-5 bg-ivory rounded-sm border border-forest/15 p-6 sm:p-7 space-y-5 shadow-subtle">
+              <div className="flex items-start justify-between">
+                <div className="space-y-1">
+                  <span className="text-[11px] uppercase font-bold tracking-widest text-gold">
+                    Company Director
+                  </span>
+                  <h3 className="font-heading text-2xl font-bold text-charcoal">
+                    {companyData.director.name}
+                  </h3>
+                  <p className="text-xs text-charcoal-muted font-mono">
+                    Official Filing: {companyData.director.officialFilingName}
+                  </p>
+                </div>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-green-100 text-green-800 text-xs font-bold uppercase tracking-wider border border-green-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+                  <span>{companyData.director.roleStatus}</span>
+                </span>
+              </div>
+
+              {/* Identity Verification Badge */}
+              <div className="p-3.5 bg-white rounded-sm border border-forest/10 flex items-center gap-3 text-xs">
+                <div className="w-8 h-8 rounded-full bg-green-50 text-green-700 flex items-center justify-center shrink-0">
+                  <BadgeCheck className="w-5 h-5 text-green-700" />
+                </div>
+                <div>
+                  <strong className="text-charcoal block font-semibold">Identity Verified</strong>
+                  <span className="text-charcoal-muted">{companyData.director.identityVerification}</span>
+                </div>
+              </div>
+
+              {/* Key Credentials Table */}
+              <dl className="divide-y divide-forest/10 text-xs pt-1">
+                <div className="py-2.5 flex justify-between">
+                  <dt className="text-charcoal-muted font-medium">Corporate Role:</dt>
+                  <dd className="font-bold text-charcoal">{companyData.director.role}</dd>
+                </div>
+                <div className="py-2.5 flex justify-between">
+                  <dt className="text-charcoal-muted font-medium">Appointed On:</dt>
+                  <dd className="font-bold text-charcoal">{companyData.director.appointedOn}</dd>
+                </div>
+                <div className="py-2.5 flex justify-between">
+                  <dt className="text-charcoal-muted font-medium">Date of Birth:</dt>
+                  <dd className="font-bold text-charcoal">{companyData.director.dateOfBirth}</dd>
+                </div>
+                <div className="py-2.5 flex justify-between">
+                  <dt className="text-charcoal-muted font-medium">Nationality:</dt>
+                  <dd className="font-bold text-charcoal">{companyData.director.nationality}</dd>
+                </div>
+                <div className="py-2.5 flex justify-between">
+                  <dt className="text-charcoal-muted font-medium">Place of Residence:</dt>
+                  <dd className="font-bold text-charcoal">{companyData.director.residence}</dd>
+                </div>
+                <div className="py-2.5 flex flex-col gap-0.5">
+                  <dt className="text-charcoal-muted font-medium">Correspondence Address:</dt>
+                  <dd className="font-semibold text-charcoal">{companyData.director.correspondenceAddress}</dd>
+                </div>
+              </dl>
+            </div>
+
+            {/* Leadership Overview & Philosophy */}
+            <div className="lg:col-span-7 space-y-5 text-sm sm:text-base text-charcoal-light leading-relaxed">
+              <h4 className="font-heading text-xl font-bold text-charcoal">
+                Directorial Oversight &amp; Building Standards
+              </h4>
+              <p>
+                As the active director of GOBIQ LTD, <strong>{companyData.director.name}</strong> leads the company with a firm commitment to statutory adherence, domestic construction safety, and verified corporate transparency.
+              </p>
+              <p>
+                From coordinating initial site consultations to overseeing trade specialists and liaising with Local Authority Building Control inspectors, the company&apos;s governance ensures that every domestic project—whether a single-storey extension, structural steel alteration, or bespoke residential new build—is carried out to exacting British standards.
+              </p>
+              <div className="p-4 bg-forest-50/70 border border-forest/15 rounded-sm text-xs text-forest-900 space-y-1.5">
+                <strong className="font-semibold block text-forest">Director Commitment:</strong>
+                <p>
+                  &ldquo;Our vision for GOBIQ LTD is anchored in dependability and personal responsibility. We believe UK homeowners deserve complete clarity on build phases, transparent communications, and enduring construction quality.&rdquo;
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
           VERIFIED COMPANY DETAILS PANEL
           100% verified Companies House data
           ========================================================================= */}
@@ -218,6 +315,15 @@ export const About: React.FC = () => {
 
             <div className="space-y-1">
               <div className="flex items-center gap-2 text-xs font-semibold text-charcoal-muted uppercase tracking-wider">
+                <UserCheck className="w-4 h-4 text-forest" />
+                <span>Company Director</span>
+              </div>
+              <p className="text-base font-bold text-charcoal">{companyData.director.name}</p>
+              <p className="text-xs text-green-700 font-medium">Active (Appointed 31 Aug 2026)</p>
+            </div>
+
+            <div className="space-y-1">
+              <div className="flex items-center gap-2 text-xs font-semibold text-charcoal-muted uppercase tracking-wider">
                 <Calendar className="w-4 h-4 text-forest" />
                 <span>Incorporation Date</span>
               </div>
@@ -234,7 +340,16 @@ export const About: React.FC = () => {
               <p className="text-xs text-charcoal-muted">{companyData.sicDescription}</p>
             </div>
 
-            <div className="space-y-1 md:col-span-2">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2 text-xs font-semibold text-charcoal-muted uppercase tracking-wider">
+                <BadgeCheck className="w-4 h-4 text-forest" />
+                <span>Identity Verification</span>
+              </div>
+              <p className="text-base font-bold text-charcoal">Complete</p>
+              <p className="text-xs text-charcoal-muted">Verified by Companies House</p>
+            </div>
+
+            <div className="space-y-1 md:col-span-3">
               <div className="flex items-center gap-2 text-xs font-semibold text-charcoal-muted uppercase tracking-wider">
                 <MapPin className="w-4 h-4 text-forest" />
                 <span>Registered Office Address</span>
