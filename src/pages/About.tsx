@@ -84,10 +84,10 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="rounded-sm overflow-hidden border border-forest/10 shadow-subtle aspect-[4/5]">
+                <div className="rounded-sm overflow-hidden border border-forest/10 shadow-subtle aspect-[4/5] bg-forest/5">
                   <img
-                    src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
-                    alt="Carefully detailed contemporary British home exterior"
+                    src="/images/brickwork-craftsmanship.png"
+                    alt="Precision brickwork and masonry jointing on domestic residential construction"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -100,12 +100,12 @@ export const About: React.FC = () => {
               <div className="space-y-4 pt-8">
                 <div className="p-4 bg-forest text-ivory rounded-sm border border-forest-600 text-xs">
                   <span className="font-semibold text-gold-light block">Structural Focus</span>
-                  <span className="text-ivory/80">RSJ installations &amp; domestic foundations.</span>
+                  <span className="text-ivory/80">RSJ installations &amp; domestic extensions.</span>
                 </div>
-                <div className="rounded-sm overflow-hidden border border-forest/10 shadow-subtle aspect-[4/5]">
+                <div className="rounded-sm overflow-hidden border border-forest/10 shadow-subtle aspect-[4/5] bg-forest/5">
                   <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-                    alt="Interior glazed residential extension"
+                    src="/images/double-storey-extension.png"
+                    alt="Double-storey domestic residential extension under construction"
                     className="w-full h-full object-cover"
                   />
                 </div>

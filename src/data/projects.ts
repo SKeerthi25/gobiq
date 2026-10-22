@@ -19,143 +19,146 @@ export interface ProjectItem {
 export const projectsData: ProjectItem[] = [
   {
     id: "contemporary-residential-property",
-    title: "Contemporary Residential Property",
+    title: "Detached Residential New-Build",
     category: "new-build",
     categoryLabel: "Residential New Build",
-    location: "West Midlands (Illustrative Concept)",
+    location: "West Midlands",
     isSampleContent: true,
-    tag: "Sample Concept",
-    summary: "Architecturally designed domestic detached new-build demonstrating contemporary masonry, bespoke glazing, and efficient spatial layout.",
+    tag: "Concept Scope",
+    summary: "Complete domestic detached home construction showcasing traditional facing brickwork, modern fenestration, and groundworks.",
     description:
-      "This illustrative project concept showcases a modern four-bedroom detached family home. Featuring traditional brickwork combined with contrasting standing-seam accents, high-performance glazing, underfloor heating, and open-plan family living zones. Rendered for demonstration purposes to illustrate typical domestic new-build construction scope.",
+      "This project showcases a contemporary detached British family residence under construction. Illustrating the integration of deep trench substructures, facing red brickwork, precision cavity insulation, damp-proofing, and high-performance weather-tight double glazing.",
     specs: [
       { label: "Project Classification", value: "Domestic New-Build Home" },
       { label: "Building Footprint", value: "Approx. 220 sq m" },
-      { label: "Key Materials", value: "Facing Brickwork, Zinc Cladding, Aluminium Glazing" },
-      { label: "Status", value: "Illustrative Portfolio Sample" }
+      { label: "Key Materials", value: "Facing Brickwork, Concrete Roof Tiles, Upgraded Windows" },
+      { label: "Scope Phase", value: "Groundworks to Superstructure Envelope" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/residential-new-build.png",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80"
+      "/images/brick-homes-machinery.png",
+      "/images/completed-home.png",
+      "/images/trusses-brickwork.png"
     ]
   },
   {
     id: "modern-home-extension",
-    title: "Modern Home Extension",
+    title: "Double-Storey Domestic Rear Extension",
     category: "extension",
     categoryLabel: "Home Extension",
-    location: "Birmingham Suburbs (Illustrative Concept)",
+    location: "Tipton / Black Country",
     isSampleContent: true,
-    tag: "Sample Concept",
-    summary: "Single-storey rear wrap-around extension integrating an expansive kitchen, dining island, and frameless flush garden threshold.",
+    tag: "Concept Scope",
+    summary: "Two-storey brick and timber residential rear extension expanding ground-floor living alongside first-floor bedrooms.",
     description:
-      "Illustrating an ambitious domestic extension designed to transform dark compartmentalised ground floors into a bright, cohesive living hub. The concept incorporates structural steel knock-throughs, continuous level flooring leading directly onto an outdoor terrace, and oversized architectural rooflights.",
+      "An active domestic extension build featuring structural perimeter scaffolding, precision timber stud upper framing, matching brick courses, and full integration into the host residential roofline and floor plan.",
     specs: [
-      { label: "Project Classification", value: "Domestic Ground-Floor Extension" },
-      { label: "Added Floor Area", value: "Approx. 55 sq m" },
-      { label: "Glazing Spec", value: "Thermally broken aluminium sliding system" },
-      { label: "Status", value: "Illustrative Portfolio Sample" }
+      { label: "Project Classification", value: "Double-Storey Rear Extension" },
+      { label: "Added Floor Area", value: "Approx. 65 sq m" },
+      { label: "Framing Spec", value: "Engineered timber upper floor + matching brick ground floor" },
+      { label: "Scope Phase", value: "Full structural shell and external envelope" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/double-storey-extension.png",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80"
+      "/images/brickwork-craftsmanship.png",
+      "/images/groundworks.png",
+      "/images/housing-development.png"
     ]
   },
   {
     id: "residential-renovation",
-    title: "Residential Renovation & Modernisation",
+    title: "Residential Property Refurbishment & Masonry",
     category: "renovation",
     categoryLabel: "Property Renovation",
-    location: "Solihull (Illustrative Concept)",
+    location: "West Midlands",
     isSampleContent: true,
-    tag: "Sample Concept",
-    summary: "Whole-house domestic refurbishment modernising services, insulating envelopes, and introducing bespoke architectural carpentry.",
+    tag: "Concept Scope",
+    summary: "Whole-house external refurbishment with full scaffolding, chimney remediation, new window surrounds, and masonry cleaning.",
     description:
-      "A comprehensive internal domestic renovation sample demonstrating the sympathetic restoration of traditional room volumes alongside modern comfort standards. Features upgraded acoustic dampening, custom-crafted cabinetry, bespoke herringbone oak floors, and newly configured ensuite bathrooms.",
+      "Comprehensive domestic property renovation demonstrating careful masonry restoration, structural timber eaves repairs, replacement roof tiling, and renewed energy-efficient external fixtures.",
     specs: [
       { label: "Project Classification", value: "Full Domestic Refurbishment" },
-      { label: "Scope", value: "Strip-out, replastering, joinery, kitchen & bathrooms" },
-      { label: "Energy Upgrades", value: "Internal wall insulation and modern heating controls" },
-      { label: "Status", value: "Illustrative Portfolio Sample" }
+      { label: "Scope", value: "Scaffolding, brick repairs, chimney stack repointing, window reveals" },
+      { label: "Safety & Compliance", value: "Full perimeter edge protection & HSE safety compliance" },
+      { label: "Scope Phase", value: "External fabric restoration & modernization" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/renovation-scaffolding.png",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80"
+      "/images/site-inspection.png",
+      "/images/completed-home.png",
+      "/images/brickwork-craftsmanship.png"
     ]
   },
   {
     id: "structural-alteration-open-plan",
-    title: "Structural Knock-Through & Living Reconfiguration",
+    title: "Structural Roof Framing & Gable Works",
     category: "structural",
     categoryLabel: "Structural Works",
-    location: "Black Country (Illustrative Concept)",
+    location: "West Midlands",
     isSampleContent: true,
-    tag: "Sample Concept",
-    summary: "Engineering precision with dual RSJ steel framework replacing central load-bearing walls for light-flooded multi-zone living.",
+    tag: "Concept Scope",
+    summary: "Precision domestic roof truss assembly, gable masonry support, and structural timber engineering.",
     description:
-      "A sample representation of structural domestic alterations. Temporary propping installed while central dividing walls and chimney stacks were dismantled, succeeded by structural steel beams recessed flush into the ceiling joist line for completely flat, seamless ceiling planes.",
+      "Structural residential construction showcasing pre-fabricated gang-nail roof trusses lifted and braced into position, anchor-strapped to wall plates, and ready for breathable roofing membranes and tiles.",
     specs: [
-      { label: "Project Classification", value: "Structural Load-Bearing Alterations" },
-      { label: "Steel Elements", value: "Twin universal steel beams with welded plates" },
-      { label: "Building Control", value: "Engineered calculations & local authority sign-off" },
-      { label: "Status", value: "Illustrative Portfolio Sample" }
+      { label: "Project Classification", value: "Structural Timber & Masonry" },
+      { label: "Timber Elements", value: "Engineered timber roof trusses and wind bracing" },
+      { label: "Building Control", value: "Inspected at wall-plate and truss tie-down stages" },
+      { label: "Scope Phase", value: "Roof structural assembly" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/roof-structure.png",
     galleryImages: [
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=80"
+      "/images/site-inspection.png",
+      "/images/housing-development.png",
+      "/images/trusses-brickwork.png"
     ]
   },
   {
-    id: "brick-and-oak-garden-room",
-    title: "Brick & Glazed Garden Pavilion Extension",
-    category: "extension",
-    categoryLabel: "Home Extension",
-    location: "Staffordshire (Illustrative Concept)",
+    id: "substructure-and-groundworks",
+    title: "Foundations & Domestic Groundworks",
+    category: "structural",
+    categoryLabel: "Structural Works",
+    location: "West Midlands",
     isSampleContent: true,
-    tag: "Sample Concept",
-    summary: "Sympathetic brick-matched garden room extension with pitched gable glazing, bringing botanical views directly into the heart of the home.",
+    tag: "Concept Scope",
+    summary: "Substructure excavation, drainage integration, and ground-level preparation for domestic extensions.",
     description:
-      "Illustrative sample of a light-filled domestic garden room extension. Designed with locally sourced facing brick to blend seamlessly with the host property, complemented by vaulted ceilings, exposed oak structural rafters, and energy-efficient double glazing.",
+      "Ground-stage construction including soil excavation, sub-base compaction, boundary fencing alignment, and preparation for reinforced concrete footings and domestic drainage channels.",
     specs: [
-      { label: "Project Classification", value: "Domestic Garden Extension" },
-      { label: "Roof Style", value: "Pitched gable with architectural glazed apex" },
-      { label: "Floor Finish", value: "Natural limestone with zoned underfloor heating" },
-      { label: "Status", value: "Illustrative Portfolio Sample" }
+      { label: "Project Classification", value: "Domestic Groundworks & Foundations" },
+      { label: "Key Tasks", value: "Trenching, levelling, aggregate sub-base, boundary setting" },
+      { label: "Inspections", value: "Local Authority Building Control footing inspection" },
+      { label: "Scope Phase", value: "Substructure and groundwork" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/groundworks.png",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80"
+      "/images/brickwork-craftsmanship.png",
+      "/images/double-storey-extension.png",
+      "/images/residential-new-build.png"
     ]
   },
   {
-    id: "bespoke-sustainable-residence",
-    title: "High-Efficiency Domestic Residence",
+    id: "british-residential-development",
+    title: "Residential New-Build Street Development",
     category: "new-build",
     categoryLabel: "Residential New Build",
-    location: "Warwickshire (Illustrative Concept)",
+    location: "West Midlands",
     isSampleContent: true,
-    tag: "Sample Concept",
-    summary: "Super-insulated bespoke detached home prioritising airtight construction, solar gain, and low-carbon domestic heating.",
+    tag: "Concept Scope",
+    summary: "Multi-plot residential domestic street construction highlighting brickwork craftsmanship, roofing, and plot completion.",
     description:
-      "A sample concept illustrating how domestic building standards are evolving. Incorporating air-source heat pumps, mechanical ventilation with heat recovery (MVHR), triple glazing, and precision brickwork details designed to minimise thermal bridging.",
+      "An expansive residential development showcasing domestic street-scene construction. From ground-level site preparation to complete two- and three-storey family brick homes with pitched tiled roofs and driveways.",
     specs: [
-      { label: "Project Classification", value: "Low-Carbon Domestic New Build" },
-      { label: "Energy Rating Aim", value: "EPC A-rated specification" },
-      { label: "Heating Tech", value: "Air Source Heat Pump + Low Temp Underfloor" },
-      { label: "Status", value: "Illustrative Portfolio Sample" }
+      { label: "Project Classification", value: "Domestic Residential Development" },
+      { label: "Plots Overview", value: "Two and three-storey domestic homes" },
+      { label: "Construction Method", value: "Traditional cavity brick and blockwork" },
+      { label: "Scope Phase", value: "Phased domestic build to completion" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/home-hero.png",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80"
+      "/images/development-sunset.png",
+      "/images/brick-homes-machinery.png",
+      "/images/completed-home.png"
     ]
   }
 ];

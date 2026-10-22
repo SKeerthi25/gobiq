@@ -26,8 +26,8 @@ export const servicesData: ServiceItem[] = [
     shortDesc: "Complete residential new-build construction delivered with precision, architectural clarity, and superior craftsmanship.",
     fullDesc:
       "From groundworks and substructure engineering to final internal finishes, our new-build domestic construction focuses on delivering homes designed for modern British living. We work collaboratively alongside architects, structural engineers, and domestic clients to transform approved plans into durable, energy-efficient residences.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Contemporary British residential brick and timber new-build architecture with modern glazing",
+    image: "/images/residential-new-build.png",
+    imageAlt: "Authentic British residential red brick new-build home under construction with groundworks",
     features: [
       "Substructure, foundation excavation, and reinforced slab works",
       "Traditional masonry, brickwork, and timber-frame construction",
@@ -51,8 +51,8 @@ export const servicesData: ServiceItem[] = [
     shortDesc: "Thoughtfully planned single and double-storey extensions created to seamlessly enhance everyday family living space.",
     fullDesc:
       "A well-designed domestic extension adds vital square footage, elevates natural daylight, and significantly enhances household functionality. Whether you are expanding a kitchen with open-plan dining, constructing a double-storey rear elevation, or creating a wrap-around ground floor, we integrate every extension with your home's existing structural fabric.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Modern open-plan kitchen extension with seamless aluminium sliding glass doors opening to garden",
+    image: "/images/double-storey-extension.png",
+    imageAlt: "Active double-storey domestic rear extension build with timber framing, brickwork and scaffolding",
     features: [
       "Single-storey rear and side-return kitchen expansions",
       "Double-storey bedroom and living extensions",
@@ -76,8 +76,8 @@ export const servicesData: ServiceItem[] = [
     shortDesc: "Sympathetic modernisation and complete refurbishments of existing houses to elevate comfort, aesthetics, and energy efficiency.",
     fullDesc:
       "Renovating a home demands respect for existing building materials coupled with modern technical standards. We undertake comprehensive domestic refurbishments — stripping back tired spaces, damp-proofing, rewiring, replumbing, and installing bespoke modern finishes that breathe fresh life into period properties and dated family homes.",
-    image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Carefully finished residential kitchen and dining space with natural timber and understated tones",
+    image: "/images/renovation-scaffolding.png",
+    imageAlt: "Residential home refurbishment and external works with full perimeter scaffolding and brick restoration",
     features: [
       "Comprehensive internal strip-outs and remedial masonry repairs",
       "Wall removals to create harmonious modern floorplans",
@@ -101,8 +101,8 @@ export const servicesData: ServiceItem[] = [
     shortDesc: "Specialist domestic building alterations, steel beam installations, foundation work, and load-bearing reconfigurations.",
     fullDesc:
       "Structural integrity is the bedrock of every domestic construction project. Our structural works include careful temporary propping (Acro props and strongboys), precision steel beam (RSJ) placement, chimney breast removals, foundation repairs, and masonry rebuilding carried out strictly to approved engineer specifications.",
-    image: "https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Professional building construction detailing and structural engineering work in progress",
+    image: "/images/roof-structure.png",
+    imageAlt: "Structural timber roof truss framing and masonry scaffolding on domestic building",
     features: [
       "Load-bearing wall removal with certified RSJ structural steel beam installation",
       "Ground floor chimney breast removals and gallows bracket / padstone support",

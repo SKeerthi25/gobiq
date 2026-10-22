@@ -115,8 +115,8 @@ export const Home: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-sm overflow-hidden shadow-elevated border border-forest/10 aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] group">
                 <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
-                  alt="Contemporary British residential architecture with quality brickwork and large glazing"
+                  src="/images/home-hero.png"
+                  alt="GOBIQ LTD residential street development with brick houses and scaffolding under construction"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-900/60 via-transparent to-transparent opacity-50" />
@@ -152,10 +152,10 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             {/* Left Image */}
             <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-forest/10">
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-forest/10 shadow-subtle">
                 <img
-                  src="https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=1000&q=80"
-                  alt="Professional UK building contractor inspecting construction site"
+                  src="/images/site-inspection.png"
+                  alt="GOBIQ LTD structural engineers and surveyors inspecting domestic staircase with blueprints"
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
@@ -249,6 +249,48 @@ export const Home: React.FC = () => {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* 3-Stage Process Visual Banner */}
+          <div className="mt-14 bg-white rounded-sm border border-forest/10 p-6 sm:p-8 lg:p-10 shadow-card">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-5 space-y-4">
+                <span className="text-xs uppercase font-bold tracking-widest text-gold">
+                  Domestic Build Methodology
+                </span>
+                <h3 className="font-heading text-2xl sm:text-3xl font-bold text-charcoal">
+                  From Groundworks to Quality Handover
+                </h3>
+                <p className="text-sm text-charcoal-light leading-relaxed">
+                  Every domestic building project follows a strict three-stage progression: preliminary foundation works and Building Control sign-offs, structural frame and roof construction, followed by turnkey interior and exterior finishes.
+                </p>
+                <div className="space-y-2 pt-2 text-xs text-charcoal-muted">
+                  <div className="flex items-center gap-2">
+                    <span className="w-5 h-5 rounded-full bg-forest text-white font-bold flex items-center justify-center text-[10px]">1</span>
+                    <strong className="text-charcoal">Phase 1:</strong> Foundations, trenches &amp; damp-proof membranes
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-5 h-5 rounded-full bg-forest text-white font-bold flex items-center justify-center text-[10px]">2</span>
+                    <strong className="text-charcoal">Phase 2:</strong> Cavity brickwork, structural timbers &amp; roof trusses
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-5 h-5 rounded-full bg-forest text-white font-bold flex items-center justify-center text-[10px]">3</span>
+                    <strong className="text-charcoal">Phase 3:</strong> Glazing, plastering, first/second-fix &amp; final handover
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:col-span-7">
+                <div className="rounded-sm overflow-hidden border border-forest/10 shadow-subtle bg-forest/5">
+                  <img
+                    src="/images/building-phases.png"
+                    alt="GOBIQ LTD 3-stage domestic building construction progression diagram from foundations to completed home"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
